@@ -82,9 +82,9 @@ $("#to_step3").click(function() {
     innerChart.selectAll("g").remove();
     hide('#step2');
     show('#step3');
-    draw("CHN", false, 0);
-    draw("CHN", false, 1);
-    draw("CHN", false, 2);
+    draw("IND", false, 0);
+    draw("IND", false, 1);
+    draw("IND", false, 2);
 })
 
 $("#to_step4").click(function() {
@@ -105,7 +105,7 @@ $("#to_step5").click(function() {
     show('#step5');
     draw("WLD", true, 0);
     draw("USA", true, 0);
-    draw("CHN", true, 0);
+    draw("IND", true, 0);
     draw("RUS", true, 0);
     
 })
