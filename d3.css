@@ -45,3 +45,8 @@ path {
     margin: auto;
     background-color:whitesmoke;
 }
+
+.alert {
+    width: 80%;
+    text-align: center;
+}

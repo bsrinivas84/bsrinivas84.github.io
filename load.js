@@ -61,7 +61,8 @@ $("#to_step2").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step1');
-    show('#step2');    
+    show('#step2');  
+hide('.step1')	;
     draw("USA", false, 0);
     draw("USA", false, 1);
     draw("USA", false, 2);
@@ -71,6 +72,8 @@ $("#to_previousstep1").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step2');
+	hide('.step2')	;
+
     show('#step1');    
     draw("USA", false, 0);
     draw("USA", false, 1);
@@ -81,6 +84,7 @@ $("#to_step3").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step2');
+	hide('.step3');
     show('#step3');
     draw("IND", false, 0);
     draw("IND", false, 1);
@@ -91,6 +95,7 @@ $("#to_previousstep2").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step3');
+	hide('.step3');
     show('#step2');    
     draw("USA", false, 0);
     draw("USA", false, 1);
@@ -101,6 +106,7 @@ $("#to_step4").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step3');
+	hide('.step3');
     show('#step4');
     draw("RUS", false, 0);
     draw("RUS", false, 1);
@@ -111,6 +117,7 @@ $("#to_previousstep3").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step4');
+	hide('.step4');
     show('#step3');    
     draw("IND", false, 0);
     draw("IND", false, 1);
@@ -122,6 +129,7 @@ $("#to_step5").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step4');
+	hide('.step4');
     loadCountries(addCountriesList);
     show('#step5');
     draw("WLD", true, 0);
@@ -135,6 +143,7 @@ $("#to_previousstep4").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
     hide('#step5');
+	hide('.step5');
     show('#step4');    
     draw("RUS", false, 0);
     draw("RUS", false, 1);
@@ -144,6 +153,7 @@ $("#to_previousstep4").click(function() {
 $("#startover").click(function() {
     innerChart.selectAll("g").remove();
     hide("#step5");
+	hide('.step5');
     hide("#country");
     //d3.selectAll("path").remove();
     show("#step1");
